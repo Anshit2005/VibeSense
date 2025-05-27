@@ -24,9 +24,23 @@ VibeSense uses webcam-based facial emotion detection powered by AI/ML to recomme
 
 ## Project Structure
 
+```bash
 vibesense/
-├── backend/ # Flask/FastAPI app + ML model serving
-├── frontend/ # React app
-├── model/ # Trained ML model files
-├── notebook/ # Jupyter notebooks for training
-├── README.md # Project overview and instructions
+├── backend/          # Backend API (Flask/FastAPI) for emotion detection & music recommendation
+│   ├── app.py        # Main server script
+│   ├── model.py      # Model loading and prediction logic
+│   └── requirements.txt # Backend dependencies
+│
+├── frontend/         # React-based frontend application
+│   ├── public/       # Static files
+│   ├── src/          # React components and styles
+│   ├── package.json  # Frontend dependencies and scripts
+│   └── tailwind.config.js # Tailwind CSS config
+│
+├── model/            # Trained ML model files (.h5 or similar)
+│
+├── notebook/         # Jupyter notebooks for model training and experiments
+│
+├── README.md         # Project overview and instructions
+└── .gitignore        # Git ignore rules
+```
