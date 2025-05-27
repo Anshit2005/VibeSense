@@ -20,3 +20,13 @@ VibeSense uses webcam-based facial emotion detection powered by AI/ML to recomme
 - **Machine Learning:** TensorFlow/Keras, OpenCV, FER-2013 dataset
 - **Authentication & Storage:** Firebase Auth and Firestore
 - **Deployment:** Vercel (frontend), Render (backend)
+
+
+## Project Structure
+
+vibesense/
+├── backend/ # Flask/FastAPI app + ML model serving
+├── frontend/ # React app
+├── model/ # Trained ML model files
+├── notebook/ # Jupyter notebooks for training
+├── README.md # Project overview and instructions
